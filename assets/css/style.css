@@ -1,0 +1,82 @@
+body{  
+  background-color: black;
+}
+.sun{
+  display: flex;
+  /* justify-content: center; */
+
+ }
+
+ img.sun{
+  height: 10px;
+ 
+ }
+ img.saturn{
+  height: 100px;
+  width: 95px;
+ }  
+ img.earth{
+  height: 50px;
+ }
+ img.jupiter{
+  height: 120px;  
+ }
+ img.mars{
+  height: 45px;
+ }
+ .saturn{
+position:absolute;
+justify-content: center;
+animation-name: saturn;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+}
+@keyframes saturn {
+  0%   { left:0px; top:0px;}
+  25%  { left:300px; top:0px;}
+  50%  { left:300px; top:300px;}
+  75%  { left:0px; top:300px;}
+  100% {left:0px; top:0px;}
+} 
+.earth{
+  position:absolute;
+  justify-content: center;
+  animation-name: earth;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes earth{
+  0%{left: 0px;top: 0px;}
+  25%{left:300px;top:0px}
+  50%{left: 300px;top: 300px;}
+  75%{left: 0px;top: 300px;}
+  100%{left: 0px;top: 0px;}
+}
+.jupiter{
+position: absolute;
+justify-content:center;
+animation-name: jupiter;
+animation-duration:11s;
+animation-iteration-count: infinite;
+}
+@keyframes jupiter{ 
+  0%{left: 0px;top: 0px;}
+  25%{left: 300px;top:0px;}
+  50%{left: 300px;top:300px;}
+  75%{left: 0px;top:300px;}
+  100%{left: 0px;top: 0px;}
+}
+.mars{
+  position: absolute;
+  justify-content:center;
+  animation-name: mars;
+  animation-duration:7s;
+  animation-iteration-count: infinite;
+  }
+  @keyframes mars{
+    0%{left: 0px;top: 0px;}
+    25%{left: 300px;top:0px;}
+    50%{left: 300px;top:300px;}
+    75%{left: 0px;top:300px;}
+    100%{left: 0px;top: 0px;}
+  }
